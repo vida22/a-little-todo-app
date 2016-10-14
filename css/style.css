@@ -1,0 +1,107 @@
+#mobile-screen {
+    display: block;
+    margin: auto;
+    padding: 0;
+    min-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.material-icons.delete-button {
+    color: #bdbdbd;
+    font-size: 25px;
+    float: right;
+    vertical-align: center;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav {
+/*    display: block;*/
+    background-color: #579BE9;
+    color: white;
+    height: 60px;
+    padding: 0px 10px 16px 0px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+}
+
+#icon {
+    display: inline-block;   
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#header {
+    padding: 20 0 20 0;
+    vertical-align: middle;
+}
+
+/*Typography*/
+
+h1 {
+    display: inline-block;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
+    display: inline-block;
+    font-size: 18px;
+    color: #212121;
+    font-family: "Helvetica", sans-serif;
+    padding-left: 15px;
+}
+
+.stroked {
+    text-decoration: line-through;
+    color: #bdbdbd;
+}
+
+
+#add-a-todo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+input {
+    display: inline-block;
+}
+
+#user-input {
+    width: auto;
+    float: left;
+    margin: 20px 30px 40px 30px;
+}
+
+button {
+    display: inline-block;
+    margin: 20px 50px 40px 0px;
+}
+
+.btn-primary {
+    background: #579BE9;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/*
+input[type=checkbox]:checked + input.todo-item{
+  text-decoration: line-through;
+}*/
