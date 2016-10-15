@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>To-Do App</title>
     <!-- fill in properly below to link to style sheet and js-->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel = "stylesheet" href= "css/style.css">
+
     <script src ="https://code.jquery.com/jquery-latest.min.js"></script>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel = "stylesheet" href= "css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
   </head>
     
   <body>
@@ -18,20 +21,140 @@
         <nav>
             <div id = "header">
                 <i class="material-icons" id="icon">done_all</i>
-                <h1>All To-Dos</h1>
+                <h1 class="myh1">All To-Dos</h1>
             </div>
         </nav>
-        <ul id = "todo-list">
-            <li>
-                <input class="checkbox" type="checkbox">
-                <p>PUI Homework</p>
-                <i class="material-icons delete-button">delete</i> 
-            </li>
-        </ul>
-        <div id="add-a-todo">
-            <input  id="user-input" class="form-control" type="text" placeholder="Add a todo..." > </input>  
-            <button id= "add-button" class="btn btn-primary" >Add Todo</button>
-        </div>
+        
+<!--Today card  -->  
+        <div class="mycard">
+            <ul id = "todo-list">
+                <h2 class="myh2">Today</h2>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Coding assignment</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle pui"></div>
+                            <h3 class="myh3">PUI</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Reading for Monday</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle pui"></div>
+                            <h3 class="myh3">PUI</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Write reading reflection</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle ixds"></div>
+                            <h3 class="myh3">IxDS</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Buy cake</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle bday"></div>
+                            <h3 class="myh3">Bday</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+            </ul>
+         </div>
+          
+<!--Tomorrow card  -->
+        <div class="mycard">
+            <ul id = "todo-list">
+                <h2 class="myh2">Tomorrow</h2>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Print handout</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle pui"></div>
+                            <h3 class="myh3">PUI</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+            </ul>
+          </div>
+          
+<!--Next 7 days card-->
+          <div class="mycard">
+            <ul id = "todo-list">
+                <h2 class="myh2">Next 7 Days</h2>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Book venue</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle bday"></div>
+                            <h3 class="myh3">Bday</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Buy candels</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle bday"></div>
+                            <h3 class="myh3">Bday</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Assignment mobile app</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle ixds"></div>
+                            <h3 class="myh3">IxDS</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p class="myp">Finish in-lab excercise</p>
+                    <div class="todo-options">
+                        <div class="list-name">
+                            <div class="circle pui"></div>
+                            <h3 class="myh3">PUI</h3>
+                        </div> 
+                        <i class="material-icons delete-button">delete</i> 
+                    </div>
+                </li>
+            </ul>
+         </div>
+
+<!--Add todo-->
+<!--
+          
+            <div id="add-a-todo">
+                <input  id="user-input" class="form-control" type="text" placeholder="Add a todo..." > </input>  
+                <button id= "add-button" class="btn btn-primary" >Add Todo</button>
+            </div>
+-->
+            
+       
       </div>
     <script src ="js/myscript.js"></script>
   </body>
