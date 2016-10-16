@@ -21,18 +21,18 @@
     height: 8px;
     width: 8px;
     border-radius: 8px; 
-    margin-right: 2px;
+    margin-right: 7px;
 }
 
-.circle.pui{
+.circle.work{
     background: #60CEB5;
 }
 
-.circle.ixds{
+.circle.personal{
     background: #E8828E;
 }
 
-.circle.bday{
+.circle.other{
     background: #F7B842;
 }
 
@@ -96,7 +96,7 @@ nav {
     margin-left: 10px;
     margin-right: 20px;
     vertical-align: middle;
-    width: 50px;
+    width: 65px;
 }
 
 #header {
@@ -141,8 +141,13 @@ html *
     font-size: 12px;
     display: inline-block;
     margin: 0px;
+    color: #B3B3B3;
 }
 
+.myh4{
+    color: #b3b3b3;
+    font-size: 14px;
+}
 
 .stroked {
     text-decoration: line-through;

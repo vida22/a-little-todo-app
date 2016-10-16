@@ -22,7 +22,7 @@
         <nav>
             <div id = "header">
                 <i class="material-icons" id="icon">done_all</i>
-                <h1 class="myh1">All To-Dos</h1>
+                <h1 class="myh1">My To-Dos</h1>
             </div>
         </nav>
         
@@ -30,6 +30,8 @@
         <div class="mycard">
             <ul class = "todo-list" id="today">
                 <h2 class="myh2">Today</h2>
+                <h4 class="myh4" id="todayplaceholder">No todo yet...</h4>
+<!--
                 <li>
                     <input class="checkbox" type="checkbox">
                     <p class="myp">Coding assignment</p>
@@ -74,6 +76,7 @@
                         <i class="material-icons delete-button">delete</i> 
                     </div>
                 </li>
+-->
             </ul>
          </div>
           
@@ -81,6 +84,8 @@
         <div class="mycard">
             <ul class = "todo-list" id="tomorrow">
                 <h2 class="myh2">Tomorrow</h2>
+                <h4 class="myh4" id="tomorrowplaceholder">No todo yet...</h4>
+<!--
                 <li>
                     <input class="checkbox" type="checkbox">
                     <p class="myp">Print handout</p>
@@ -92,6 +97,7 @@
                         <i class="material-icons delete-button">delete</i> 
                     </div>
                 </li>
+-->
             </ul>
           </div>
           
@@ -99,6 +105,8 @@
           <div class="mycard">
             <ul class = "todo-list" id="next7days">
                 <h2 class="myh2">Next 7 Days</h2>
+                <h4 class="myh4" id="nextplaceholder">No todo yet...</h4>
+<!--
                 <li>
                     <input class="checkbox" type="checkbox">
                     <p class="myp">Book venue</p>
@@ -143,6 +151,7 @@
                         <i class="material-icons delete-button">delete</i> 
                     </div>
                 </li>
+-->
             </ul>
          </div>
           
@@ -172,9 +181,9 @@
                 <div class="form-group">
                   <label for="project">Project</label>
                   <select class="form-control" id="project">
-                    <option>PUI</option>
-                    <option>Bday</option>
-                    <option>IxDS</option>
+                    <option>Personal</option>
+                    <option>Work</option>
+                    <option>Other</option>
                   </select>
                 </div>
                 <div class="form-group">
