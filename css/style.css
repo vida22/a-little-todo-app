@@ -6,6 +6,10 @@
     margin-bottom: 50px;
 }
 
+.modal {
+    top: 10%;
+}
+
 
 .mycard {
     /* Add shadows to create the "card" effect */
