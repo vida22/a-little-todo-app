@@ -28,7 +28,7 @@
         
 <!--Today card  -->  
         <div class="mycard">
-            <ul id = "todo-list">
+            <ul class = "todo-list" id="today">
                 <h2 class="myh2">Today</h2>
                 <li>
                     <input class="checkbox" type="checkbox">
@@ -79,7 +79,7 @@
           
 <!--Tomorrow card  -->
         <div class="mycard">
-            <ul id = "todo-list">
+            <ul class = "todo-list" id="tomorrow">
                 <h2 class="myh2">Tomorrow</h2>
                 <li>
                     <input class="checkbox" type="checkbox">
@@ -97,7 +97,7 @@
           
 <!--Next 7 days card-->
           <div class="mycard">
-            <ul id = "todo-list">
+            <ul class = "todo-list" id="next7days">
                 <h2 class="myh2">Next 7 Days</h2>
                 <li>
                     <input class="checkbox" type="checkbox">
@@ -123,7 +123,7 @@
                 </li>
                 <li>
                     <input class="checkbox" type="checkbox">
-                    <p class="myp">Assignment mobile app</p>
+                    <p class="myp">Mobile app design</p>
                     <div class="todo-options">
                         <div class="list-name">
                             <div class="circle ixds"></div>
@@ -149,15 +149,10 @@
           
 <!--Add todo-->
           
-          <button class="fab" data-toggle="modal" data-target="#addTodoModal">+</button>
-          
-<!--
-          
-            <div id="add-a-todo">
-                <input  id="user-input" class="form-control" type="text" placeholder="Add a todo..." > </input>  
-                <button id= "add-button" class="btn btn-primary" >Add Todo</button>
-            </div>
--->
+      <!--Add todo FAB icon  -->
+
+      <button class="fab" data-toggle="modal" data-target="#addTodoModal">+</button>
+
           
         <!-- Modal Add Todo-->
         <div class="modal fade col-xs-12" id="addTodoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -171,8 +166,8 @@
               </div>
               <div class="modal-body">
                 <div class="form-group">
-                    <label for="usr">Todo</label>
-                    <input type="text" class="form-control" id="title">
+                    <label for="title-title">Todo</label>
+                    <input type="text" class="form-control" id="todo-title">
                 </div>
                 <div class="form-group">
                   <label for="project">Project</label>
@@ -184,7 +179,7 @@
                 </div>
                 <div class="form-group">
                   <label for="due">Due</label>
-                  <select class="form-control" id="project">
+                  <select class="form-control" id="due">
                     <option>Today</option>
                     <option>Tomorrow</option>
                     <option>Next 7 Days</option>
@@ -197,7 +192,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Add Todo</button>
+                <button type="button" class="btn btn-primary" id="add-button">Add Todo</button>
               </div>
             </div>
           </div>

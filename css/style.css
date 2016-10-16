@@ -156,7 +156,7 @@ html *
     width: 100%;
 }
 
-#todo-list {
+.todo-list {
     padding: 0px;
 }
 
@@ -174,7 +174,24 @@ input {
 .btn-primary {
     background: #579BE9;
     font-weight: 400;
-    border: #579BE9;
+    border: #579BE9 solid 1px;
+}
+
+.btn-secondary {
+    background: white;
+    border: #579be9 solid 1px;
+    color: #579be9;
+}
+
+
+.btn-primary:hover {
+    background: #3777C0;
+    border: #3777C0 solid 1px;
+}
+
+.btn-secondary:hover {
+    color: #3777C0;
+    border: #3777C0 solid 1px;
 }
 
 .fab {
