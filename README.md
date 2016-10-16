@@ -1,4 +1,4 @@
-# little-todo-app
+# A little todo app
 
-* A little todo app made for Programming User Interface course 
+* This is a little todo app made for Programming User Interface course at CMU
 * @CMU @MHCI
