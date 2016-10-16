@@ -12,7 +12,7 @@ $(document).ready(function() {
       $('.modal').on('hidden.bs.modal', resetModal);
     });
 
-//Show/hide placeholder text for cards
+//Show and hide placeholder text for cards
 function checkTodos(){
     //show and hide today's placeholder
     if ($('#today').children('li').length > 0){
@@ -74,7 +74,7 @@ function checkTodos(){
     };
 
 
-//reset modal
+//Reset modal
     function resetModal(){
       console.log("Reset modal");
       $("#notes").val('');
