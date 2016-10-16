@@ -21,11 +21,18 @@ $(document).ready(function() {
     }
 
     function deleteTodo(){
-        console.log("delete clicked!");
-        var r = confirm("Are you sure you want to delete this todo?");
-        if (r == true) {
-            $(this).parent('li').remove();
-        } else {};
+        console.log("delete clicked!"); $(this).parent('div').parent('li').attr("id","tobedeleted");
+        $('#deleteModal').modal('show');
+        $('#delete-todo-button').on('click', function () {
+            $('#tobedeleted').remove();
+            $('#deleteModal').modal('hide');
+        });
+        
+//        var r = confirm("Are you sure you want to delete this todo?");
+//        console.log(r);
+//        if (r == true) {
+//            $(this).parent('li').remove();
+//        } else {};
     };
 
 

@@ -13,7 +13,7 @@
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.09);
     border-radius: 2px;
     margin: 20px 15px 20px 15px;
-    padding: 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .circle {
@@ -21,7 +21,7 @@
     height: 8px;
     width: 8px;
     border-radius: 8px; 
-/*    margin: 10px 3px 10px 3px;*/
+    margin-right: 2px;
 }
 
 .circle.pui{
@@ -43,6 +43,7 @@ ul {
 li {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 3px;
 }
 
 .material-icons.delete-button {
@@ -169,16 +170,11 @@ input {
     margin: 20px 30px 40px 30px;
 }
 
-button {
-    display: inline-block;
-    margin: 20px 50px 40px 0px;
-}
 
 .btn-primary {
     background: #579BE9;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: none;
+    font-weight: 400;
+    border: #579BE9;
 }
 
 .fab {
