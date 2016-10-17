@@ -10,6 +10,11 @@ $(document).ready(function() {
       $(document).on("click",'.checkbox', completeTodo);
       //reset modal
       $('.modal').on('hidden.bs.modal', resetModal);
+      //auto focus
+      $('#addTodoModal').on('shown.bs.modal',function(){
+          $('#todo-title').focus();
+          console.log('focused!');
+      })
     });
 
 //Show and hide placeholder text for cards
