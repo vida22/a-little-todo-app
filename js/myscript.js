@@ -1,7 +1,7 @@
 $(document).ready(function() {
       //add todo
       $("#add-button").click(addTodo);  
-      //deelte todo
+      //delete todo
       $(document).on("click",'.material-icons.delete-button', deleteTodo);
       //show and hide placeholder text for cards
       checkTodos();
@@ -10,7 +10,16 @@ $(document).ready(function() {
       $(document).on("click",'.checkbox', completeTodo);
       //reset modal
       $('.modal').on('hidden.bs.modal', resetModal);
+      //auto focus
+      $('#addTodoModal').on('shown.bs.modal',function(){
+          $('#todo-title').focus();
+      })
+      //validate form
+      $("#addTodoModal").click(validateForm);
     });
+
+
+
 
 //Show and hide placeholder text for cards
 function checkTodos(){
@@ -41,11 +50,40 @@ function checkTodos(){
 }
 
 
+//show error message
+    function showError(){
+        $('#add-button').prop('disabled', true);
+        $('#todo-warning').show();
+        $('#todo-input').addClass('has-error');
+    }
+
+//hide error message
+    function hideError(){
+        $('#add-button').prop('disabled', false);
+        $('#todo-warning').hide();
+        $('#todo-input').removeClass('has-error');
+    }
+
+//validate input
+    function validateForm(){
+        if ($("#todo-title").val().length==0) {
+          console.log("Todo field is empty!");
+          showError();
+      } else{
+          hideError();
+      }
+    }
+
+
 //Add Todo
 
     function addTodo() {
       console.log("To-do add button clicked");
       var new_todo = $("#todo-title").val();
+      console.log(new_todo.length);
+      if (new_todo.length == 0) {
+          showError();          
+      } else{
       var todo_project = $("#project").find("option:selected").val();
       var todo_due = $("#due").find("option:selected").val();
     
@@ -70,6 +108,7 @@ function checkTodos(){
                            .append($('<h3>').addClass('myh3').text(todo_project)))
                     .append($('<i>').addClass("material-icons").addClass("delete-button").text("delete")))
             )
+      hideError()}
       checkTodos(); 
     };
 
@@ -81,6 +120,7 @@ function checkTodos(){
       $("#todo-title").val('');
       $("#project").val('Personal');
       $("#due").val('Today');
+      hideError();
     }
 
 

@@ -10,7 +10,6 @@
     top: 10%;
 }
 
-
 .mycard {
     /* Add shadows to create the "card" effect */
     background: #FBFBFB;
@@ -56,6 +55,10 @@ li {
     font-size: 18px;
     vertical-align: middle;
     display: inline-block;
+}
+
+button:focus {
+    outline:0;
 }
 
 nav {
@@ -159,7 +162,14 @@ html *
     color: #bdbdbd;
 }
 
+#todo-warning {
+    color: #a94442;
+}
 
+#todo-input.has-error label {
+    color: #a94442;
+}
+ 
 #add-a-todo {
     position: fixed;
     bottom: 0;
