@@ -120,7 +120,7 @@ function checkTodos(){
       $("#todo-title").val('');
       $("#project").val('Personal');
       $("#due").val('Today');
-      $('#todo-warning').hide();
+      hideError();
     }
 
 

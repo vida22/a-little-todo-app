@@ -57,6 +57,10 @@ li {
     display: inline-block;
 }
 
+button:focus {
+    outline:0;
+}
+
 nav {
 /*    display: block;*/
     background-color: #579BE9;
